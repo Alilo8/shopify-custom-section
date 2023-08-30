@@ -1,0 +1,41 @@
+<div class="custom">
+        <h1>Welcome</h1>
+</div>
+{% schema %}
+{
+  "name": "Slick Slider",
+  "presets": [
+    {
+      "name": "Slick Slider"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+/* Apply basic styles to the animation container */
+.custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: black;
+} 
+.custom h1{
+  padding: 1rem;
+  background-color: #afadad;
+  box-shadow: 0 0 20px black;
+  color: white;
+  cursor: pointer;
+}
+.custom h1:hover{
+  background-color: white;
+  box-shadow: 0 0 20px white;
+  color: black;
+  transition: all 500ms ease-in;
+  transition-property: box-shadow, background-color;
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
